@@ -1,0 +1,265 @@
+/* General Container Styling */
+.contact-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f2fff0, #e0f7ff);
+  position: relative;
+  padding: 60px 20px;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Green underline */
+.green-underline {
+  width: 80px;
+  height: 4px;
+  background: #00c853;
+  margin: 10px auto 30px auto;
+  border-radius: 2px;
+}
+/* Contact.css */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f3f4f6, #e0f7fa);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.green-underline {
+  width: 80px;
+  height: 4px;
+  background-color: #00c853;
+  margin-bottom: 40px;
+  border-radius: 2px;
+  animation: slideIn 1s ease-out forwards;
+}
+
+.contact-section h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  max-width: 600px;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.contact-item {
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}
+
+.pulse {
+  animation: pulseAnim 2s infinite;
+}
+
+.float {
+  animation: floatAnim 3s ease-in-out infinite;
+}
+
+.social-float-container {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 99;
+}
+
+.social-float {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease;
+}
+
+.social-float:hover {
+  transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes pulseAnim {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes floatAnim {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { width: 0; }
+  to { width: 80px; }
+}
+
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  color: #003c2f;
+  margin-bottom: 30px;
+}
+
+/* Contact Info Styling */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.contact-item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Icons */
+.icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.pulse {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.float:hover {
+  transform: scale(1.2);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Floating Background Logos */
+.social-float-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.social-float {
+  position: absolute;
+  width: 40px;
+  opacity: 0.12;
+  animation: floatLogo 18s infinite linear;
+}
+
+/* Custom positions and delays */
+.icon1 {
+  top: 5%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.icon2 {
+  top: 25%;
+  right: 15%;
+  animation-delay: 3s;
+}
+
+.icon3 {
+  bottom: 20%;
+  left: 25%;
+  animation-delay: 6s;
+}
+
+.icon4 {
+  bottom: 10%;
+  right: 20%;
+  animation-delay: 9s;
+}
+
+@keyframes floatLogo {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-50px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .contact-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-section h1 {
+    font-size: 2rem;
+  }
+}
