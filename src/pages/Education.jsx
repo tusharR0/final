@@ -35,7 +35,7 @@ const Education = () => {
         <div className="edu-wrapper">
           <div className="edu-section fade-in">
             <div className="edu-content">
-              <img src="/sb j.png" alt="sb" className="sb logo" />
+              <img src="/sb j.png" alt="sb" className="edu-logo" />
 
 
               <a
