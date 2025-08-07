@@ -43,7 +43,8 @@ const Home = () => (
      <div className="hero-ellipse"></div>
     <div className="hero-bg primary-bg"></div>
     <div className="hero-bg secondary-bg"></div>
-    <img src="\my-removebg-preview.png" alt="Hero" className="hero-image" />
+   <img src="/my-removebg-preview.png" alt="Hero" className="hero-image" />
+
   </div>
 </div>
 </div>
