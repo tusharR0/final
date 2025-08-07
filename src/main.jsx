@@ -1,6 +1,8 @@
 import React from 'react'
+import { Analytics } from "@vercel/analytics/next";
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import Home from './pages/Home'
 import Experience from './pages/Experience'
 import Education from './pages/Education'
@@ -8,6 +10,7 @@ import Projects from './pages/Projects'
 import Certificates from './pages/Certificates'
 import Contact from './pages/Contact'
 import './index.css'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
